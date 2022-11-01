@@ -5,6 +5,9 @@ import { Grid } from '@mui/material';
 import Header from '../components/Header';
 import Onepage from './onepage';
 import SelectCity from '../components/SelectCity';
+
+
+
 const Home = () => {
     const [city, setCity] = useState('Kermān');
     const [cityWeather, setCityWeather] = useState({})
@@ -20,6 +23,7 @@ const Home = () => {
     return (
         <Grid>
             <Header />
+
             <SelectCity city={city} setCity={setCity} />
             <Onepage cityWeather={cityWeather} city={city} />
 
