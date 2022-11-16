@@ -11,11 +11,11 @@ const Darkmode = ({ setstate }) => {
   return (
     <Grid>
       <Button onClick={handlelightmode} variant={"outlined"} m={10}>
-        {" "}
+
         lightmode
       </Button>
       <Button onClick={handledarkmode} variant={"outlined"}>
-        {" "}
+
         darkmode
       </Button>
     </Grid>

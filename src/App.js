@@ -1,12 +1,12 @@
 import { RouterProvider } from 'react-router-dom'
 import { router } from "./routes/routes"
-import './App.css'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Button } from '@mui/material';
+import Button from '@mui/material/Button';
 import { useState } from 'react';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import "./App.css"
 function App() {
   const [state, setstate] = useState("light")
 
@@ -21,6 +21,7 @@ function App() {
   const handlelightmode = () => {
     setstate("light")
   }
+
   return (
     <ThemeProvider theme={Theme}>
       <CssBaseline />

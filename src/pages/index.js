@@ -8,8 +8,10 @@ import SelectCity from '../components/SelectCity';
 
 
 
+
 const Home = () => {
     const [city, setCity] = useState('Kermān');
+
     const [cityWeather, setCityWeather] = useState({})
     const handleGetData = async () => {
         const data = await handleGetOneDayWeather(city)
@@ -25,6 +27,7 @@ const Home = () => {
             <Header />
 
             <SelectCity city={city} setCity={setCity} />
+
             <Onepage cityWeather={cityWeather} city={city} />
 
 

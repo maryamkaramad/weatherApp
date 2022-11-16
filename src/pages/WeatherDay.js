@@ -18,14 +18,13 @@ const WeatherDay = () => {
     const handleGetData = async () => {
         const data = await handleGetFiveDayWeather(city)
         setCityWeatherFuture(data)
-        console.log(data)
+
 
     }
 
     useEffect(() => {
         handleGetData()
     }, [])
-
     return (
         <Grid container justifyContent={"center"} alignItems={"center"} flexDirection={"column"} gap={20} mt={8}>
             <Typography item variant='h2' color={"blue"}>{city}</Typography>
