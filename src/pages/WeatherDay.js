@@ -26,11 +26,17 @@ const WeatherDay = () => {
         handleGetData()
     }, [])
     return (
-        <Grid container justifyContent={"center"} alignItems={"center"} flexDirection={"column"} gap={20} mt={8}>
-            <Typography item variant='h2' color={"blue"}>{city}</Typography>
-            <Grid item gap={6} display={"flex"} width={"80%"}>
+        <Grid container justifyContent={"center"} alignItems={"center"} flexDirection={"column"} gap={20} mt={8} xs={12}>
+            <Grid item>
+                <Typography item variant='h2' color={"blue"}>{city}</Typography>
+            </Grid>
+
+            <Grid item container xs={12} p={4} gap={2} justifyContent={"center"} alignItems={"center"}>
+
                 {dataday.map(index => (
-                    <CartWeather index={index} cityWeatherFuture={cityWeatherFuture} />
+                    <Grid item xs={12} md={4} lg={4}>
+                        <CartWeather index={index} cityWeatherFuture={cityWeatherFuture} />
+                    </Grid>
                 ))}
 
 

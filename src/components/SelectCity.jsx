@@ -8,10 +8,10 @@ const SelectCity = ({ city, setCity }) => {
     setCity(event.target.value);
   };
   return (
-    <Grid container justifyContent={"center"} alignItems={"center"}>
-      <Grid item textAlign={"center"} sx={{ mt: "20px" }}>
+    <Grid container xs={12} p={2} justifyContent={"center"} alignItems={"center"}>
+      <Grid item sx={{ mt: "20px" }} xs={10} md={3}>
         <TextField
-          sx={{ width: "350px" }}
+          fullWidth
           select
           value={city}
           onChange={handleChange}

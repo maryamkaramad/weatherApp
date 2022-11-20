@@ -23,7 +23,7 @@ const Home = () => {
 
 
     return (
-        <Grid>
+        <Grid container xs={12} p={2}>
             <Header />
 
             <SelectCity city={city} setCity={setCity} />

@@ -1,18 +1,20 @@
 import React from "react";
-import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 const Header = () => {
   return (
-    <Box
+    <Grid
+      container
       mb={10}
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
       color={"blue"}
+
     >
-      <Typography variant="h2">WeatherApp</Typography>
-    </Box>
+      <Typography variant="h3">WeatherApp</Typography>
+    </Grid>
   );
 };
 
