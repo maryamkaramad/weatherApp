@@ -32,7 +32,7 @@ const Onepage = ({ cityWeather, city }) => {
                 <CardContent container item justifyContent={"center"} sx={i18n.languages[0] === "fa" ? { textAlign: "right" } : { textAlign: "left" }}>
 
                     <Typography item variant="h5" component="div">
-                        {t("city.1")}: {cityWeather.name}
+                        {cityWeather.name}
                     </Typography>
                     <Typography item sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                         <Grid>
