@@ -1,16 +1,19 @@
+
+
 export const Cities = [
-    { name: 'کرمان', title: 'Kermān' },
-    { name: 'تهران', title: 'tehran' },
-    { name: 'تبریز', title: 'tabriz' },
-    { name: 'اصفهان', title: 'isfahan' },
-    { name: 'یزد', title: 'yazd' },
-    { name: 'شیراز', title: 'shiraz' },
-    { name: 'مشهد', title: 'mashhad' },
-    { name: 'قم', title: 'qom' },
-    { name: 'پاریس', title: 'paris' },
-    { name: 'نیویورک', title: 'new%20york' },
-    { name: 'دهلی قدیم', title: 'dehli' },
-    { name: 'تورنتو', title: 'toronto' },
-    { name: 'برلین', title: 'berlin' },
+
+    { name: 'کرمان', title: 'Kerman' },
+    { name: 'تهران', title: 'Tehran' },
+    { name: 'تبریز', title: 'Tabriz' },
+    { name: 'اصفهان', title: 'Isfahan' },
+    { name: 'یزد', title: 'Yazd' },
+    { name: 'شیراز', title: 'SHiraz' },
+    { name: 'مشهد', title: 'Mashhad' },
+    { name: 'قم', title: 'Qom' },
+    { name: 'پاریس', title: 'Paris' },
+    { name: 'نیویورک', title: 'New%20york' },
+    { name: 'دهلی قدیم', title: 'Dehli' },
+    { name: 'تورنتو', title: 'Toronto' },
+    { name: 'برلین', title: 'Berlin' },
     { name: 'توکیو', title: 'Tokyo' },
 ]

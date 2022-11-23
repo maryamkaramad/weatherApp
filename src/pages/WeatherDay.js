@@ -7,7 +7,6 @@ import { Typography } from '@mui/material';
 import CartWeather from '../components/CartWeather';
 
 
-
 const dataday = [0, 8, 16, 24, 32]
 
 
@@ -31,10 +30,10 @@ const WeatherDay = () => {
                 <Typography item variant='h2' color={"blue"}>{city}</Typography>
             </Grid>
 
-            <Grid item container xs={12} p={4} gap={2} justifyContent={"center"} alignItems={"center"}>
+            <Grid item container xs={10} p={4} gap={2} justifyContent={"center"} alignItems={"center"}>
 
                 {dataday.map(index => (
-                    <Grid item xs={12} md={4} lg={4}>
+                    <Grid item xs={8} md={3} lg={2} >
                         <CartWeather index={index} cityWeatherFuture={cityWeatherFuture} />
                     </Grid>
                 ))}

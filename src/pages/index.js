@@ -2,7 +2,7 @@ import React from 'react'
 import { handleGetOneDayWeather } from '../api/api'
 import { useState, useEffect } from 'react';
 import { Grid } from '@mui/material';
-import Header from '../components/Header';
+
 import Onepage from './onepage';
 import SelectCity from '../components/SelectCity';
 
@@ -24,10 +24,7 @@ const Home = () => {
 
     return (
         <Grid container xs={12} p={2}>
-            <Header />
-
             <SelectCity city={city} setCity={setCity} />
-
             <Onepage cityWeather={cityWeather} city={city} />
 
 

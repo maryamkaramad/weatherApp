@@ -1,9 +1,11 @@
 import React from "react";
 import { Cities } from "../db/citydb";
 import { Grid, TextField } from "@mui/material";
-
+import { useTranslation } from 'react-i18next';
 
 const SelectCity = ({ city, setCity }) => {
+  const { t, i18n } = useTranslation();
+
   const handleChange = (event) => {
     setCity(event.target.value);
   };
@@ -20,7 +22,8 @@ const SelectCity = ({ city, setCity }) => {
         >
           {Cities.map((c) => (
             <option key={c.title} value={c.title}>
-              {c.name}
+
+              {i18n.languages[0] === "fa" ? c.name : c.title}
             </option>
           ))}
         </TextField>

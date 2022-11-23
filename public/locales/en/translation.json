@@ -1,0 +1,29 @@
+{
+    "Date":{
+        "1":"   Date"
+    },
+    "temperature":{
+        "1":" Temperature"
+    },
+    "weather conditions":{
+        "1":"weather conditions"
+    },
+    "city":{
+        "1":"City"
+    }
+    ,
+    "country":{
+        "1":"Country"
+    },
+    "wind speed":{
+        "1":"wind speed"
+    }
+    ,
+    "five":{
+        "1":"weather for the next five days"
+    } ,"kerman":{
+        "1":"Kerman"
+    }
+    
+    
+}
