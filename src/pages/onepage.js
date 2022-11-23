@@ -27,8 +27,8 @@ const Onepage = ({ cityWeather, city }) => {
 
     }, [cityWeather])
     return (
-        <Grid container justifyContent={"center"} alignItems={"center"} sx={{ mt: 20, opacity: "0.9", backgroundColor: "" }} textAlign={"right"} >
-            <Card container item sx={{ minWidth: "10%" }} justifyContent={"center"}>
+        <Grid container justifyContent={"center"} alignItems={"center"} sx={{ mt: 20, backgroundColor: "" }} textAlign={"right"} >
+            <Card container item sx={{ minWidth: "20%" }} justifyContent={"center"}>
                 <CardContent container item justifyContent={"center"} sx={i18n.languages[0] === "fa" ? { textAlign: "right" } : { textAlign: "left" }}>
 
                     <Typography item variant="h5" component="div">
