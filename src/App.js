@@ -34,12 +34,12 @@ function App() {
   return (
     <ThemeProvider theme={Theme}>
       <CssBaseline />
-      <Grid container p={2} justifyContent={"space-between"} xs={12} sx={{ backgroundColor: "#e1f5fe" }}>
-        <Grid item container xs={6}>
+      <Grid container justifyContent={"space-between"} xs={12} sx={{ backgroundColor: "#e1f5fe", paddingTop: 1, paddingBottom: 1 }}>
+        <Grid item container xs={5}>
           <Button onClick={handlelightmode}  > <LightModeIcon /></Button>
           <Button onClick={handledarkmode}> <DarkModeIcon /></Button>
         </Grid>
-        <Grid item container xs={6} justifyContent={"flex-end"} gap={1}>
+        <Grid item container xs={7} justifyContent={"flex-end"} p={1} gap={"1px"}>
           <Button onClick={() => handleclick("fa")} variant={"contained"} > فارسی</Button>
           <Button onClick={() => handleclick("en")} variant={"contained"} > انگلیسی</Button>
         </Grid>

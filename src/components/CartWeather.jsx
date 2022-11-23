@@ -28,14 +28,13 @@ const CartWeather = ({ index, cityWeatherFuture }) => {
       container
       key={index}
       flexDirection={"column"}
-      alignItems={"flex-end"}
       gap={2}
       boxShadow={4}
       p={2}
       sx={i18n.languages[0] === "fa" ? { alignItems: "flex-end" } : { alignItems: "flex-start" }}
       xs={12}
     >
-      <Grid item xs={12}> <Typography >
+      <Grid item xs={8} lg={12} > <Typography  >
         {t("Date.1")}: {cityWeatherFuture?.[index]?.dt_txt}
       </Typography></Grid>
 

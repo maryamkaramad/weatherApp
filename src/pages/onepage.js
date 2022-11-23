@@ -54,10 +54,13 @@ const Onepage = ({ cityWeather, city }) => {
 
 
                 </CardContent>
-                <Grid container item justifyContent={"flex-end"}>
+                <Grid container item justifyContent={"center"}>
                     <CardActions container item justifyContent={"flex-end"} >
+
                         <Link to={`weatherday/${city}`}>
                             <Button item size="small" variant="outlined"> {t("five.1")} </Button></Link>
+
+
                     </CardActions></Grid>
             </Card>
         </Grid>
