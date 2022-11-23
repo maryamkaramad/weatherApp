@@ -1,3 +1,15 @@
 a {
     text-decoration: none;
 }
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../public/fonts/Vazir-Thin.ttf');
+    src: url('../public/fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/Vazir-Thin.woff2') format('woff2'),
+        url('../public/fonts/Vazir-Thin.woff') format('woff'),
+        url('../public/fonts/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}

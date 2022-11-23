@@ -7,15 +7,19 @@ import { useState } from 'react';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { useTranslation } from 'react-i18next';
-import "./App.css"
-import { Grid } from '@mui/material';
 
+import { Grid } from '@mui/material';
+import "./App.css"
 function App() {
   const [state, setstate] = useState("light")
   const { t, i18n } = useTranslation();
   const Theme = createTheme({
     palette: {
       mode: state,
+    },
+    typography: {
+      fontFamily:
+        'Vazir',
     },
   });
   const handledarkmode = () => {
